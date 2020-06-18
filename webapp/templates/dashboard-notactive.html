@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="https://kit.fontawesome.com/348d220d1f.js" crossorigin="anonymous"></script>
+
+    <title>TweetX</title>
+  </head>
+  <body><nav class="navbar sticky-top navbar-expand-lg navbar-dark text-light bg-dark">
+    <a class="navbar-brand">
+      <img src="../static/icon.png" width="30" height="30" alt="" loading="lazy">
+    </a>
+    <a class="navbar-brand">TweetX</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li style="border-bottom: 1px solid #007bff;" class="nav-item active">
+          <a class="nav-link" href="#"><i style="color: rgb(255, 255, 255);" class="fas fa-user-cog"></i> Dashboard <span class="sr-only ">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-users"></i> Followers</a>
+        </li>
+      </ul>
+      <form action="/activate" class="form-inline my-2 my-lg-0">
+        <div class="t">
+        <button id="t" class="btn my-2 my-sm-0" type="submit">Activate <i class="far fa-check-circle"></i></button>
+        
+        </div>
+      </form>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div id="mainalert" class="alert alert-danger" role="alert">
+      <i style="color: yellow;" class="fas fa-exclamation-triangle"></i>  TweetX is currently not active..!
+    </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="car0" class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-wifi"></i> Status:</h5>
+          <div id="border2" class="border"></div>
+          <p  class="card-text"><div id="alertdan" class="alert alert-danger" role="alert">
+            <i class="fas fa-ban"></i> Not Active
+          </div></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div id="car" class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-tachometer-alt"></i> Frequency:</h5>
+          <div id="border2" class="border"></div>
+          <p class="card-text"><div id="alertdan" class="alert alert-danger" role="alert">
+            N/A
+          </div></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="car0" class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-retweet"></i> Retweets:</h5>
+          <div id="border2" class="border"></div>
+          <p class="card-text"><div id="alertinfo" class="alert alert-info" role="alert">
+            {{retweets}}
+          </div></p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div id="car" class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-times-circle"></i> Failed Retweets:</h5>
+          <div id="border2" class="border"></div>
+          <p class="card-text"><div id="alertwarn" class="alert alert-warning" role="alert">
+            {{fails}}
+          </div></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
