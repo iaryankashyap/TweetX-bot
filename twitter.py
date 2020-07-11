@@ -1,10 +1,10 @@
 import tweepy
 import time
 
-auth = tweepy.OAuthHandler("nBzN5fIGo7eIac2dXzxEkmJTf",
-                           "QyRJWpA7sUwpXa3sMteB5RGXzHi6zEAdIHVUQAVeSOTTmnzEGH")
-auth.set_access_token("1272918562403782661-HgpnGSh9kVARsqozKdFI3sjZ4Ozd8o",
-                      "6zJNJanh4Y0SS8ffKjIJm28SShwu6J0ZqAUU5zYyGHDdq")
+auth = tweepy.OAuthHandler("API keys are a secret",
+                           "Yes they are")
+auth.set_access_token("Secret token",
+                      "Top Secret")
 
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
